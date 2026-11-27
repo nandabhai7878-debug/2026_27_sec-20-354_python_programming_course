@@ -1,0 +1,12 @@
+# Function to calculate simple interest
+def simple_interest(principal, time, rate=5):
+    si = (principal * time * rate) / 100
+    return si
+
+# Call using default rate
+si1 = simple_interest(10000, 2)
+print("Simple Interest with default rate:", si1)
+
+# Call using explicit rate
+si2 = simple_interest(10000, 2, 10)
+print("Simple Interest with explicit rate:", si2)
